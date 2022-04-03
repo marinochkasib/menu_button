@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+
+// 2 Также, потребуется кнопочка которая скроет меню:
+.button{
+    width: 200px;
+    height: 48px;
+    background: linear-gradient(white, lightgray);
+    border-radius: 4px;
+    border: 1px solid gray;
+    // три полоски меню:
+    font-size: 32px;
+    line-height: 48px; // Свойство устанавливает расстояние между строк. Нюанс: От шрифтов можно ожидать прибавку дополнительного промежутка к нашему расстоянию. Разные шрифты - разные промежутки.
+    text-align: center; // Выравнивание по горизонтали
+    cursor: pointer; // Лапка вместо курсора при наведении
+    // убрать выделение на бургере можно с помощью::selection
+ //       &::selection {
+ //       background: transparent;}
+
+    &:hover {
+        background: linear-gradient(#eee, lightgray);
+    }
+
+    &::selection {
+        background: transparent;
+    }
+}
+
+.menu{
+    width: 200px;
+    // 1 Чтобы меню появилось не сразу, пишем :
+    display: none;
+}
+
+.button-toggled {
+    background: linear-gradient(lightgray, white) ;
+
+    &:hover {
+        background: linear-gradient(#bbb, #eee);
+    }
+}
+
+// 4 Чтобы перебить св-во display:none пишем ниже ОБЯЗАТЕЛЬНО: 
+.show{
+    display: block;
+}
+
+
+.menu-element{
+    background: lightgray;
+    border-bottom: 1px solid gray;
+}
+
+.menu-link{
+    font-size: 16px;
+}

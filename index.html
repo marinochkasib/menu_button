@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu button </title>
+        <link rel="stylesheet" href="styles.css">
+<!-- 3 скачиваем файл, добавляем в папку с проектом и Подключаем файл JS -->
+        <script src="uilang.js"></script>
+    </head>
+<body>
+    <!--5 При щелчке на button добавляем класс show, см пункт 6-->
+    <div class="button">&#9776;</div> <!-- css-tricks.com - &#9776; три полоски для бургера меню -->
+
+        <ul class="menu">
+            <li class="menu-element">
+                <a href="#" class="menu-link">Ссылка</a>
+            </li>
+            <li class="menu-element">
+                <a href="#" class="menu-link">Ссылка</a>
+            </li>
+            <li class="menu-element">
+                <a href="#" class="menu-link">Ссылка</a>
+            </li>
+            <li class="menu-element">
+                <a href="#" class="menu-link">Ссылка</a>
+            </li>
+    </ul>
+    <!-- 6 Перед /body пишем -->
+    <code>
+        <!-- нажатие на ".button" переключает "показ" класса на ".menu"-->
+        clicking on ".button" toggles class "show" on ".menu"
+
+        <!-- нажатие на «.button» переключает класс «кнопка переключения» на «.button» -->
+        clicking on ".button" toggles class "button-toggled" on ".button"
+    </code>
+    
+</body>
+</html>
